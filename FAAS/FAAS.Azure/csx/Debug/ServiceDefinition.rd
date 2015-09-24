@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FAAS.Azure" generation="1" functional="0" release="0" Id="16fc0585-9464-44e1-a305-5924c00de51d" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FAAS.Azure" generation="1" functional="0" release="0" Id="62b67017-ea33-49a8-878a-b632cd87cd1a" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="FAAS.AzureGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -42,7 +42,7 @@
       </maps>
       <components>
         <groupHascomponents>
-          <role name="FAAS" generation="1" functional="0" release="0" software="C:\Users\cx75\Desktop\Arvind FaaS\FAAS\FAAS.Azure\csx\Debug\roles\FAAS" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
+          <role name="FAAS" generation="1" functional="0" release="0" software="C:\Users\cx75\Documents\GitHub\Hackathon\FAAS\FAAS.Azure\csx\Debug\roles\FAAS" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="-1" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
             <componentports>
               <inPort name="Endpoint1" protocol="http" portRanges="80" />
             </componentports>
@@ -70,9 +70,9 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="d8daf4fb-ff44-4c66-bb60-e4199d250525" ref="Microsoft.RedDog.Contract\ServiceContract\FAAS.AzureContract@ServiceDefinition">
+    <implementation Id="011051ae-f34d-4687-ad51-d1d6f5bbdeda" ref="Microsoft.RedDog.Contract\ServiceContract\FAAS.AzureContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="4c6a46d5-1caa-4826-bb8e-d901fe296b41" ref="Microsoft.RedDog.Contract\Interface\FAAS:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="edbb28ff-b36f-4f9e-8554-4ce6d0ae325d" ref="Microsoft.RedDog.Contract\Interface\FAAS:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/FAAS.Azure/FAAS.AzureGroup/FAAS:Endpoint1" />
           </inPort>

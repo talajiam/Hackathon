@@ -199,6 +199,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AkController.cs" />
     <Compile Include="Controllers\DellyController.cs" />
+    <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Entities\Checkout.cs" />
     <Compile Include="Entities\DellyOrders.cs" />
@@ -207,6 +208,7 @@
     <Compile Include="Entities\ProductTenat.cs" />
     <Compile Include="Entities\Tenat.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\UserOrder.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

@@ -1,16 +1,16 @@
-DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:05:53] Emulator config file set to C:\Users\cx75\Desktop\Arvind FaaS\FAAS\FAAS.Azure\csx\Debug\roles\FAAS\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:05:53] DiagnosticsStoreRootPath set to: C:\Users\cx75\AppData\Local\dftmp\Resources\56c7e92f-5810-4709-9ffb-de241fdeeb37
-DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:05:53] Loading config file: C:\Users\cx75\Desktop\Arvind FaaS\FAAS\FAAS.Azure\csx\Debug\roles\FAAS\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:05:53] Checking VM Type
-DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:05:53] Emulator config file set to C:\Users\cx75\Desktop\Arvind FaaS\FAAS\FAAS.Azure\csx\Debug\roles\FAAS\approot\diagnostics.wadcfgx
-DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:05:53] Extension set to Emulator Mode
-DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:05:53] Reading XML configuration file
-DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:05:53] Bypassing private config decryption
-DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:05:53] Stopping the running plugin, if any
-DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:05:53] No DiagnosticsPlugin is running.
-DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:05:53] Killing any DiagnosticsPlugin that might remain.
-DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:05:53] Killing any MonAgentHost that might remain.
-DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:05:53] Diagnostics plugin stopped successfully
-DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:05:53] Resetting DiagnosticPlugin
-DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:07:04] DiagnosticsPlugin launched successfully with new configuration
-DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:07:04] DiagnosticPlugin exited with code 0
+DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:52:50] Emulator config file set to C:\Users\cx75\Documents\GitHub\Hackathon\FAAS\FAAS.Azure\csx\Debug\roles\FAAS\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:52:51] DiagnosticsStoreRootPath set to: C:\Users\cx75\AppData\Local\dftmp\Resources\749d0535-884f-4812-a890-2cc8346957e1
+DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:52:51] Loading config file: C:\Users\cx75\Documents\GitHub\Hackathon\FAAS\FAAS.Azure\csx\Debug\roles\FAAS\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:52:51] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:52:51] Emulator config file set to C:\Users\cx75\Documents\GitHub\Hackathon\FAAS\FAAS.Azure\csx\Debug\roles\FAAS\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:52:51] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:52:51] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:52:51] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:52:51] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:52:51] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:52:51] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:52:51] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:52:52] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:52:52] Resetting DiagnosticPlugin
+DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:54:02] DiagnosticsPlugin launched successfully with new configuration
+DiagnosticsPluginLauncher.exe Information: 0 : [24/09/2015 14:54:02] DiagnosticPlugin exited with code 0

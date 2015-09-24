@@ -1,27 +1,27 @@
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:54] Starting DiagnosticPlugin.exe DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v4
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:54] Successfully saved IIS Directory state
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:54] Successfully saved IIS Directory state
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:54] Successfully saved IIS Directory state
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:54] Successfully saved IIS Directory state
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:54] Successfully saved IIS Directory state
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:54] Successfully saved IIS Directory state
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:54] Successfully saved IIS Directory state
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:54] Successfully saved IIS Directory state
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:54] Successfully saved IIS Directory state
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:54] Successfully saved IIS Directory state
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:54] Successfully saved IIS Directory state
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:54] Successfully saved IIS Directory state
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:54] Starting DiagnosticsPlugin
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:54] Emulator config file set to C:\Users\cx75\Desktop\Arvind FaaS\FAAS\FAAS.Azure\csx\Debug\roles\FAAS\approot\diagnostics.wadcfgx
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:54] DiagnosticsStoreRootPath set to: C:\Users\cx75\AppData\Local\dftmp\Resources\56c7e92f-5810-4709-9ffb-de241fdeeb37
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:55] Loading config file: C:\Users\cx75\Desktop\Arvind FaaS\FAAS\FAAS.Azure\csx\Debug\roles\FAAS\approot\diagnostics.wadcfgx
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:55] Checking VM Type
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:55] Emulator config file set to C:\Users\cx75\Desktop\Arvind FaaS\FAAS\FAAS.Azure\csx\Debug\roles\FAAS\approot\diagnostics.wadcfgx
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:55] Extension set to Emulator Mode
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:55] Reading XML configuration file
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:55] Bypassing private config decryption
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:55] WadCfg is provided in initial configuration. Using that to initialize Diagnostics.
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:55] <PublicConfig xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration">
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:52] Starting DiagnosticPlugin.exe DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v4
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Successfully saved IIS Directory state
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Successfully saved IIS Directory state
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Successfully saved IIS Directory state
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Successfully saved IIS Directory state
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Successfully saved IIS Directory state
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Successfully saved IIS Directory state
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Successfully saved IIS Directory state
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Successfully saved IIS Directory state
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Successfully saved IIS Directory state
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Successfully saved IIS Directory state
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Successfully saved IIS Directory state
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Successfully saved IIS Directory state
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Starting DiagnosticsPlugin
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Emulator config file set to C:\Users\cx75\Documents\GitHub\Hackathon\FAAS\FAAS.Azure\csx\Debug\roles\FAAS\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] DiagnosticsStoreRootPath set to: C:\Users\cx75\AppData\Local\dftmp\Resources\749d0535-884f-4812-a890-2cc8346957e1
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Loading config file: C:\Users\cx75\Documents\GitHub\Hackathon\FAAS\FAAS.Azure\csx\Debug\roles\FAAS\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Checking VM Type
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Emulator config file set to C:\Users\cx75\Documents\GitHub\Hackathon\FAAS\FAAS.Azure\csx\Debug\roles\FAAS\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Extension set to Emulator Mode
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Reading XML configuration file
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Bypassing private config decryption
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] WadCfg is provided in initial configuration. Using that to initialize Diagnostics.
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] <PublicConfig xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration">
   <WadCfg>
     <DiagnosticMonitorConfiguration overallQuotaInMB="4096">
       <DiagnosticInfrastructureLogs scheduledTransferLogLevelFilter="Error" />
@@ -52,38 +52,38 @@ DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:55] <PublicConfig xmlns
   </WadCfg>
   <StorageAccount>devstoreaccount1</StorageAccount>
 </PublicConfig>
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:55] Private setting is loaded
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:55] Successfully created checkpoint file C:\Users\cx75\AppData\Local\dftmp\Resources\56c7e92f-5810-4709-9ffb-de241fdeeb37\WAD0104\Configuration\Checkpoint.txt
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:55] Will use local resource directory C:\Users\cx75\AppData\Local\dftmp\Resources\56c7e92f-5810-4709-9ffb-de241fdeeb37\WAD0104
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:55] Will use endpoint https://core.windows.net for storage.
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Created IIS log watch item: "C:\inetpub\logs\LogFiles"
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Created IIS failed requests watch item: "C:\inetpub\logs\FailedReqLogFiles"
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] Running in emulator mode, crash dumps not enabled
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:05:57] In emulator mode and using devstore updating XStoreAccount info, command line args: -LocalPath "C:\Users\cx75\AppData\Local\dftmp\Resources\56c7e92f-5810-4709-9ffb-de241fdeeb37\WAD0104"  -ConfigFile "C:\Users\cx75\AppData\Local\dftmp\Resources\56c7e92f-5810-4709-9ffb-de241fdeeb37\WAD0104\Configuration\MaConfig.xml" -ShutDownEvent WADDM-ShutDown-d9162683194e4d4b8bb3a550359a6051  -TotalShutDownEvent WADDM-TotalShutDown-d9162683194e4d4b8bb3a550359a6051 -InitializedEvent WADM-StartUp-d9162683194e4d4b8bb3a550359a6051 -parent 10320 -events -wadVer1v4 -UseProxyServer -XStoreAccounts WadAccount#true#devstoreaccount1#Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:06:57] MonAgentHost.exe started
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:06:57] DiagnoticsPlugin started.
-DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:06:57] DiagnoticsPlugin now waiting on events "DiagnosticPlugin-ShutdownEvent", "DiagnosticPlugin-TotalShutdownEvent" or "DiagnosticPlugin-RestartEvent".
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Private setting is loaded
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Successfully created checkpoint file C:\Users\cx75\AppData\Local\dftmp\Resources\749d0535-884f-4812-a890-2cc8346957e1\WAD0104\Configuration\Checkpoint.txt
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:53] Will use local resource directory C:\Users\cx75\AppData\Local\dftmp\Resources\749d0535-884f-4812-a890-2cc8346957e1\WAD0104
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:54] Will use endpoint https://core.windows.net for storage.
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Created IIS log watch item: "C:\inetpub\logs\LogFiles"
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Created IIS failed requests watch item: "C:\inetpub\logs\FailedReqLogFiles"
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] Running in emulator mode, crash dumps not enabled
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:52:55] In emulator mode and using devstore updating XStoreAccount info, command line args: -LocalPath "C:\Users\cx75\AppData\Local\dftmp\Resources\749d0535-884f-4812-a890-2cc8346957e1\WAD0104"  -ConfigFile "C:\Users\cx75\AppData\Local\dftmp\Resources\749d0535-884f-4812-a890-2cc8346957e1\WAD0104\Configuration\MaConfig.xml" -ShutDownEvent WADDM-ShutDown-1860e19ad53e478794763bc34fa00b11  -TotalShutDownEvent WADDM-TotalShutDown-1860e19ad53e478794763bc34fa00b11 -InitializedEvent WADM-StartUp-1860e19ad53e478794763bc34fa00b11 -parent 10716 -events -wadVer1v4 -UseProxyServer -XStoreAccounts WadAccount#true#devstoreaccount1#Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:53:55] MonAgentHost.exe started
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:53:55] DiagnoticsPlugin started.
+DiagnosticsPlugin.exe Information: 0 : [24/09/2015 14:53:55] DiagnoticsPlugin now waiting on events "DiagnosticPlugin-ShutdownEvent", "DiagnosticPlugin-TotalShutdownEvent" or "DiagnosticPlugin-RestartEvent".

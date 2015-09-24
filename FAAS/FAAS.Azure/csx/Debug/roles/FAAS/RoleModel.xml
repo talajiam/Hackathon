@@ -24,14 +24,14 @@
     <Property name="SetConfiguration" value="Configuration=Debug" />
     <Property name="SetPlatform" value="Platform=AnyCPU" />
     <Property name="RoleTargetFramework" value="v4.5" />
-    <Property name="OutputDir" value="C:\Users\cx75\Desktop\Arvind FaaS\FAAS\FAAS.Azure\obj\Debug\FAAS\" />
+    <Property name="OutputDir" value="C:\Users\cx75\Documents\GitHub\Hackathon\FAAS\FAAS.Azure\obj\Debug\FAAS\" />
     <Property name="EntryPoint" value="FAAS.dll" />
-    <Property name="SourceDir" value="C:\Users\cx75\Desktop\Arvind FaaS\FAAS\FAAS\" />
-    <Property name="SitePhysicalPath" value="C:\Users\cx75\Desktop\Arvind FaaS\FAAS\FAAS\" />
+    <Property name="SourceDir" value="C:\Users\cx75\Documents\GitHub\Hackathon\FAAS\FAAS\" />
+    <Property name="SitePhysicalPath" value="C:\Users\cx75\Documents\GitHub\Hackathon\FAAS\FAAS\" />
     <Property name="TargetRuntimeVersion" value="v4.0" />
   </Properties>
   <Sites>
-    <Site name="Web" physicalDirectory="C:\Users\cx75\Desktop\Arvind FaaS\FAAS\FAAS\">
+    <Site name="Web" physicalDirectory="C:\Users\cx75\Documents\GitHub\Hackathon\FAAS\FAAS\">
       <Bindings>
         <Binding name="Endpoint1" endpointName="Endpoint1" />
       </Bindings>
