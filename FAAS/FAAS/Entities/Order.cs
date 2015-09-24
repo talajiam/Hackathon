@@ -12,5 +12,12 @@ namespace TescoFAAS.Entities
         public double Amount { get; set; }
         public string MobileNo { get; set; }
         public int status { get; set; }
+
+        public List<Product> Items { get; set; }
+
+        public Order()
+        {
+            Items = new List<Product>();
+        }
     }
 }

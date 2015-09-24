@@ -21,10 +21,10 @@ using System.IO;
 
 namespace FAAS.Controllers
 {
-     
+
     public class HomeController : Controller
     {
-        Database1Entities db = new Database1Entities();    
+        Database1Entities db = new Database1Entities();
         public ActionResult Index()
         {
             ViewBag.Message = "Food as a Service";
@@ -35,7 +35,7 @@ namespace FAAS.Controllers
             model.TenantImageUrl = FAAS.App_Start.Helper.GetCustomLogo(teantid);
             model.productItems = products;
             return View(model);
-            
+
         }
 
         public ActionResult About()
@@ -71,7 +71,7 @@ namespace FAAS.Controllers
             }
             int ItemsCount = 0;
             double TotalBill = 0;
-
+            Entities.UserOrder Order = new Entities.UserOrder();
             Entities.Checkout chekout = new Entities.Checkout();
             try
             {
@@ -79,6 +79,7 @@ namespace FAAS.Controllers
                 {
                     if (prodct.IsSelected || prodct.Qty > 0)
                     {
+                        //Order.product.Add(prodct);
                         ItemsCount++;
                         TotalBill += prodct.Price * prodct.Qty;
                     }
@@ -87,6 +88,7 @@ namespace FAAS.Controllers
             catch (Exception ex)
             {
             }
+
 
             chekout.ItemQty = ItemsCount;
             chekout.TotalPrice = TotalBill;

@@ -19,6 +19,8 @@ namespace FAAS.App_Start
 
         public static List<DellyOrder> mockDellyOrder { get; set; }
 
+        public static List<UserOrder> userOrders { get; set; }
+
         static MockData()
         {
             Tenants = new List<Tenat>();
@@ -30,6 +32,8 @@ namespace FAAS.App_Start
             Users = new List<User>();
 
             mockDellyOrder = new List<DellyOrder>();
+
+            userOrders = new List<UserOrder>();
 
             InitializeProducts();
             InitializeProductTenant();
