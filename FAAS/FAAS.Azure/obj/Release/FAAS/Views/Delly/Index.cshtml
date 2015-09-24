@@ -1,0 +1,43 @@
+﻿@model List<FAAS.Entities.DellyOrder>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Index", "Delly"))
+{
+
+    <h2>Delly Orders</h2>
+
+    <table>
+        <tr>
+            <td></td>
+            <td>
+                Name
+            </td>
+            <td>
+                Total
+            </td>
+            <td > Pending</td>
+            <td>Completed</td>
+        </tr>
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            <tr>
+                <td><img src="@Model[i].ImageUrl" width="100" height="50" /></td>
+                <td>
+                    @Html.HiddenFor(mode => Model[i].ProductId)
+                    @Model[i].Name
+                </td>
+                <td>@Model[i].TotalOrder</td>
+                <td >@Model[i].PendingOrder</td>
+                <td>@Html.TextBoxFor(model => Model[i].CompletedOrder)</td>
+            </tr>
+
+        }
+    </table>
+
+
+    <input type="submit" value="Update" />
+}

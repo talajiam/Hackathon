@@ -1,0 +1,54 @@
+﻿@model FAAS.Models.HeaderModel
+@{
+    ViewBag.Title = "Products";
+
+}
+<h1>TESCO Food as a Service</h1>
+
+@using (Html.BeginForm("Products", "Home"))
+{
+    //@System.Diagnostics.Debugger.Launch();
+    @Html.HiddenFor(model => Model.TenantImageUrl)
+
+
+    <div id="productsWrapper">
+        <ul id="products" data-role="listview" data-inset="true">
+            @*@foreach (var p in Model.productItems)*@
+            @for (int i = 0; i < Model.productItems.Count; i++)
+            {
+                @Html.HiddenFor(model =>  Model.productItems[i].Price)
+                @Html.HiddenFor(model=> Model.productItems[i].Name)
+                
+                <li class="product">
+                    <a href="~/@Model.productItems[i].ProductId" title="Order @Model.productItems[i].Name">
+                        <img class="hide-from-desktop" src="~/Images/Products/Thumbnails/@Model.productItems[i].ImageUrl" alt="Image of @Model.productItems[i].Name" />
+
+                        <div class="productInfo">
+                            <h3>@Model.productItems[i].Name</h3>
+                            <img class="product-image hide-from-mobile" src="@Model.productItems[i].ImageUrl" alt="Image of @Model.productItems[i].Name" />
+                            @*<p class="description">@p.Description</p>*@
+
+                            <p class="price hide-from-desktop">£@string.Format("{0:f}", Model.productItems[i].Price)</p>
+                        </div>
+                    </a>
+
+                    <!-- Desktop only -->
+                    <div class="action  hide-from-mobile">
+                        <p class="price">
+                            @*@Html.CheckBoxFor(model => Model.productItems[i].IsSelected)*@                            
+                            £@string.Format("{0:f}", Model.productItems[i].Price)
+                            @Html.TextBoxFor(model => Model.productItems[i].Qty, new { style = "width:50px" })
+                        </p>
+                        @*<a class="order-button" href="~/order/@p.ProductId" title="Order @p.Name">Order Now</a>*@
+                    </div>
+
+                </li>
+
+            }
+        </ul>
+    </div>
+
+    <input type="submit" value="CheckOut" />
+
+
+}

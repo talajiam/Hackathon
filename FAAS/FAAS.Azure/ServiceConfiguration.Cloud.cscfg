@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="FAAS.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="FAAS">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=portalvhdscmpv9d87n5666;AccountKey=YnxHY9AzQgaqBWOJXxgvcH/Y4COx8T6Y1PTg4sKkvgsRZSTxHY6pJtbMvGAeP2g8LtI5D43ROOtvZHRpq2x+lQ==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

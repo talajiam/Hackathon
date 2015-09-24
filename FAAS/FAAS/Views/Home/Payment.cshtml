@@ -1,0 +1,140 @@
+﻿@model FAAS.Entities.Checkout
+@{
+    ViewBag.Title = "Payment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*@section featured {*@
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                @*<h1>@ViewBag.Title</h1>*@
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            @*<p>
+                    To learn more about ASP.NET MVC visit
+                    <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
+                    The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET MVC.
+                    If you have any questions about ASP.NET MVC visit
+                    <a href="http://forums.asp.net/1146.aspx/1?MVC" title="ASP.NET MVC Forum">our forums</a>.
+                </p>*@
+        </div>
+    </section>
+@*}*@
+@using (Html.BeginForm("Payment", "Home"))
+{
+    <div id="rightColumn">
+            
+            <div class="orderSummary scrollPosition">
+                <div class="header">
+                    <h1 class="cf">Order Summary</h1>
+                </div>
+                <div class="bottom">
+                    <div class="body">
+
+                        <div class="deliveryDetails">
+                            <dl class="sprite cf">
+                                <dt class="address">Delivery to:</dt>
+                                <dd class="address">
+
+                                    <span class="hlt"></span>
+                                    Office 33,
+27 Colmore Row,
+Birmingham,
+England,
+B3 2EW
+                                </dd>
+                            </dl>
+
+
+
+                        </div>
+                        <div class="deliveryDetails">
+                            <dl class="cf">
+                                <dt class="dateTime">Delivery on:
+                                <span class="hide">Delivery time</span> </dt>
+                                <dd class="dateTime sprite">
+                                    <span class="hlt date">Monday
+21<sup>th</sup>&#160;September</span><br />
+                                    <span class="hlt time">12:00-14:00
+                                    </span></dd>
+                                <p class="slotExpiryTime">
+                                    Please checkout your order by <strong>10:00</strong> to ensure you don't lose the slot.
+                                </p>
+                            </dl>
+
+                        </div>
+                        <div class="totalItems">
+                            <dl class="cf">
+                                <dt>Items in your trolley:</dt>
+                                <dd>2
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="priceDetails">
+                            <h3 class="hide">Payment Summary</h3>
+                            <dl class="cf">
+                                <dt>Service Charge:</dt>
+                                <dd>0.00</dd>
+                            </dl>
+
+                            <dl class="cf">
+                                <dt class="total">Total:</dt>
+                                <dd class="total">£@Model.TotalPrice</dd>
+                            </dl>
+                        </div>
+                        <div class="info">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div id="outer" class="section secureCheckout">
+        <div id="content">
+
+            <h1 class="cf"> Payment details
+            </h1>
+            <div class="mainContent">
+                <div class="paymentContainer" id="paymentContainer">
+                    <div class="paymentHeader">
+                        <h3>Payment options</h3>
+                    </div>
+                    <div class="paymentContent">
+                        <form action="/en-GB/Payment/SetPaymentOptions" method="post">
+                            <fieldset title="Payment options">
+                                <div class="paymentOptions" id="paymentOptions">
+                                    <div class="heading cf">
+                                        <h3>Choose between the following payment options:</h3>
+                                        @*<div class="cards">
+                                        <span>We accept the following payment cards:</span>
+                                        <img src="https://secure.ap-tescoassets.com/UIAssets/MY/grocery/default/css/i368/Payment/visa.gif" alt="visa" />
+                                        <img src="https://secure.ap-tescoassets.com/UIAssets/MY/grocery/default/css/i368/Payment/visa-debit.gif" alt="visa debit" />
+                                        <img src="https://secure.ap-tescoassets.com/UIAssets/MY/grocery/default/css/i368/Payment/visa-electron.gif" alt="visa electron" />
+                                        <img src="https://secure.ap-tescoassets.com/UIAssets/MY/grocery/default/css/i368/Payment/mastercard.gif" alt="mastercard" />
+                                    </div>*@
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <input id="PaymentOnline" style="width: 30px" name="SelectedPaymentOption" type="radio" value="PaymentOnline" />Pay online securely                                                                       </li>
+                                        <li>
+                                            <input id="PaymentDoorCard" style="width: 30px" name="SelectedPaymentOption" type="radio" value="PaymentDoorCard" />Pay at the door by card</li>
+                                         <li>
+                                            <input id="PaymentOnWallet" style="width: 30px" name="SelectedPaymentOption" type="radio" value="PaymentOnWallet" />Pay by Tesco Wallet</li>
+                                    </ul>
+                                     
+
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <br />
+        </div>
+
+        
+        <input type="submit" value="ConfirmOrder" />
+    </div>
+
+}
