@@ -27,12 +27,6 @@
       <Content destination=".\">
         <SourceDirectory path="C:\Users\cx75\Documents\GitHub\Hackathon\FAAS\FAAS.Azure\rcf\Debug\FAASContent\" />
       </Content>
-      <Content destination=".\">
-        <SourceDirectory path="C:\Users\cx75\Documents\GitHub\Hackathon\FAAS\FAAS.Azure\ecf\FAASContent\" />
-      </Content>
     </Contents>
-    <Imports>
-      <Import moduleName="Diagnostics" />
-    </Imports>
   </WebRole>
 </ServiceDefinition>

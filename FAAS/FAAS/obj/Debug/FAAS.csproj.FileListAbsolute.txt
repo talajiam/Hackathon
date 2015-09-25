@@ -445,3 +445,4 @@ C:\Users\cx75\Documents\GitHub\Hackathon\FAAS\FAAS\bin\zh-Hans\System.Spatial.re
 C:\Users\cx75\Documents\GitHub\Hackathon\FAAS\FAAS\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\cx75\Documents\GitHub\Hackathon\FAAS\FAAS\obj\Debug\FAAS.dll
 C:\Users\cx75\Documents\GitHub\Hackathon\FAAS\FAAS\obj\Debug\FAAS.pdb
+C:\Users\cx75\Documents\GitHub\Hackathon\FAAS\FAAS\obj\Debug\FAAS.csprojResolveAssemblyReference.cache
