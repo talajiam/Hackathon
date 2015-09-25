@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FAAS.Azure" generation="1" functional="0" release="0" Id="62b67017-ea33-49a8-878a-b632cd87cd1a" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FAAS.Azure" generation="1" functional="0" release="0" Id="e8493d99-eb3a-4afd-8e05-6a586788cd19" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="FAAS.AzureGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -70,9 +70,9 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="011051ae-f34d-4687-ad51-d1d6f5bbdeda" ref="Microsoft.RedDog.Contract\ServiceContract\FAAS.AzureContract@ServiceDefinition">
+    <implementation Id="243d3d6a-6c87-4dd6-8c0d-039b88ba02c6" ref="Microsoft.RedDog.Contract\ServiceContract\FAAS.AzureContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="edbb28ff-b36f-4f9e-8554-4ce6d0ae325d" ref="Microsoft.RedDog.Contract\Interface\FAAS:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="11de4468-0264-4c4e-a4ac-d38f3ac762ac" ref="Microsoft.RedDog.Contract\Interface\FAAS:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/FAAS.Azure/FAAS.AzureGroup/FAAS:Endpoint1" />
           </inPort>
