@@ -1,41 +1,39 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-@section featured {
-    <section class="featured">
-        <div class="content-wrapper">
-            <hgroup class="title">
-                <h1>@ViewBag.Title.</h1>
-                <h2></h2>
-            </hgroup>
-            @*<p>
-                    To learn more about ASP.NET MVC visit
-                    <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
-                    The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET MVC.
-                    If you have any questions about ASP.NET MVC visit
-                    <a href="http://forums.asp.net/1146.aspx/1?MVC" title="ASP.NET MVC Forum">our forums</a>.
-                </p>*@
-        </div>
-    </section>
-}
 @*<hgroup class="title">
     <h1>@ViewBag.Title.</h1>
 </hgroup>*@
+<h1 style="font-size:150%">Contact Us</h1>
+
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+    <div class="row">
+        <label for="name" style="font-size:200%"><b>Your name:</b></label><br />
+        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+    </div>
+    <div class="row">
+        <label for="email" style="font-size:200%"><b>Your email:</b></label><br />
+        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+    </div>
+    <div class="row">
+        <label for="message" style="font-size:200%"><b>Your message:</b></label><br />
+        <textarea id="message" class="input" name="message" rows="7" cols="50"></textarea><br />
+    </div>
+    <input id="submit_button" type="submit" value="Send email" />
+</form>
+
 
 <section class="contact">
-    <header>
-        <h3>Phone</h3>
-    </header>
-    <p>
-        <span>425.555.0100</span>
-    </p>
-</section>
+    <h2>
+       <b> Phone</b></h2>
+    
+        <span style="font-size:150%">425.555.0100</span>
+    </section>
 
 <section class="contact">
-    <header>
-        <h3>Email</h3>
-    </header>
-    <p>
-        <span><a href="mailto:General@example.com">faas@tesco.com</a></span>
-    </p>
+          <h2><b>Email</b></h2>
+  
+    
+    <span style="font-size:150%"><a href="mailto:General@example.com">faas@tesco.com</a></span>
+    
 </section>

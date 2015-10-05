@@ -18,7 +18,7 @@ namespace FAAS.App_Start
         public static List<User> Users { get; set; }
 
         public static List<DellyOrder> mockDellyOrder { get; set; }
-
+        public static List<PickingOrder> mockPickingOrder { get; set; }
         public static List<UserOrder> userOrders { get; set; }
 
         static MockData()
@@ -35,19 +35,31 @@ namespace FAAS.App_Start
 
             userOrders = new List<UserOrder>();
 
+            mockPickingOrder = new List<PickingOrder>();
+
             InitializeProducts();
             InitializeProductTenant();
             InitializeTenant();
             InitializeUsers();
             InitializeMockDellyOrders();
+            InitializedPickingOrder();
         }
 
+        public static void InitializedPickingOrder()
+        {
+            mockPickingOrder.Add(new PickingOrder() { OrderId = 1, CustomerAddress = "ITPL Sapient", BarcodeUrl = "/Images/barcode/2.jpg",Postcode="560066",DeliveryTime="10:00 12/10/2015" });
+            mockPickingOrder.Add(new PickingOrder() { OrderId = 2, CustomerAddress = "ITPL TCS", BarcodeUrl = "/Images/barcode/3.jpg", Postcode = "560066", DeliveryTime = "10:30 12/10/2015" });
+            mockPickingOrder.Add(new PickingOrder() { OrderId = 3, CustomerAddress = "ITPL QUALCOM", BarcodeUrl = "/Images/barcode/4.jpg", Postcode = "560066", DeliveryTime = "10:30 13/10/2015" });
+            mockPickingOrder.Add(new PickingOrder() { OrderId = 4, CustomerAddress = "ITPL CATEPILLAR", BarcodeUrl = "/Images/barcode/5.jpg", Postcode = "560066", DeliveryTime = "10:30 13/10/2015" });
+        
+        
+        }
         public static void InitializeMockDellyOrders()
         {
-            mockDellyOrder.Add(new DellyOrder() { ProductId = 1, Name = "Bread", ImageUrl = "/Images/Products/bread.jpg", TotalOrder = 10, PendingOrder = 9, CompletedOrder = 1 });
-            mockDellyOrder.Add(new DellyOrder() { ProductId = 2, Name = "Bangers and Mash", ImageUrl = "/Images/Products/Bangers and mash.jpg", TotalOrder = 20, PendingOrder = 19, CompletedOrder = 1 });
-            mockDellyOrder.Add(new DellyOrder() { ProductId = 3, Name = "Product 3", TotalOrder = 30, PendingOrder = 20, CompletedOrder = 10 });
-            mockDellyOrder.Add(new DellyOrder() { ProductId = 4, Name = "Product 4", TotalOrder = 5, PendingOrder = 5, CompletedOrder = 0 });
+            mockDellyOrder.Add(new DellyOrder() { ProductId = 1, Name = "Bread", ImageUrl = "/Images/Products/bread.jpg", TotalOrder = 10,CompletedOrder = 1 });
+            mockDellyOrder.Add(new DellyOrder() { ProductId = 2, Name = "Bangers and Mash", ImageUrl = "/Images/Products/Bangers and mash.jpg", TotalOrder = 20, CompletedOrder = 1 });
+            mockDellyOrder.Add(new DellyOrder() { ProductId = 3, Name = "Product 3", TotalOrder = 30, CompletedOrder = 10 });
+            mockDellyOrder.Add(new DellyOrder() { ProductId = 4, Name = "Product 4", TotalOrder = 5, CompletedOrder = 0 });
 
         }
 

@@ -9,6 +9,12 @@ namespace FAAS.Models
     {
         public string TenantImageUrl { get; set; }
 
-        public List<ProdcutItems> productItems { get; set; }
+        public List<ProductItem> productItems { get; set; }
+
+        public int CustmorID { get; set; }
+
+        public string CustomerName { get; set; }
+
+        public List<ProductItem> productItemsVal { get; set; }
     }
 }

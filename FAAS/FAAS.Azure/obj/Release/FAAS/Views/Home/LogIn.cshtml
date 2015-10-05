@@ -1,0 +1,79 @@
+﻿@model FAAS.Models.LoginDetails
+
+@{
+    ViewBag.Title = "Login";
+}
+
+
+
+<h2>LogIn</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Customer</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CustomerEmail,"Email Id")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CustomerEmail)
+            @Html.ValidationMessageFor(model => model.CustomerEmail)
+        </div>
+
+        <div class="editor-label">
+            @*@Html.Display("Password")*@
+            @Html.LabelFor(model => model.Password1,"Password")
+        </div>
+        <div class="editor-label">
+            @Html.EditorFor(model => model.Password1)
+            @Html.ValidationMessageFor(model => model.Password1)
+        </div>
+        <br />
+@if (@Model == null )
+{
+      
+        <div class="editor-label">
+            <dl>
+                <dd style="color:red">
+                    Invalid username or password
+                </dd>
+            </dl>
+        </div>
+ }
+ 
+        @if (@Model != null)
+        {
+     if(@Model.CustomerEmail =="")
+     { 
+            <div class="editor-label">
+                <dl>
+                    <dd style="color:red">
+                        Invalid username or password
+                    </dd>
+                </dl>
+            </div>
+        }
+        }
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="LogIn" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <form action="Action2" method=post> 
+                @*<input type="submit" value="Register"  />*@
+                <input type="submit" formaction="Register" value="Register"/>
+                @*<a href="Register" >Register</a>*@
+            </form>
+</p>
+      
+            
+    
+    </fieldset>
+}
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

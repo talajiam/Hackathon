@@ -12,6 +12,7 @@ namespace FAAS.Controllers
     {
 
        List<UserOrder> orderList = new List<UserOrder>();
+
         // GET api/fass
         public IEnumerable<string> Get()
         {
@@ -22,7 +23,12 @@ namespace FAAS.Controllers
         // GET api/fass/5
         public IEnumerable<UserOrder> Get(int id)
         {
-            UserOrder order = orderList.Find(a=>a.OrderID ==id.ToString());
+
+            UserOrder order = new UserOrder();
+            order.OrderID = "1";
+            order.TotalPrice = 3;
+            orderList.Add(order);
+            orderList.Find(a=>a.OrderID ==id.ToString());
             //return "value";
             return orderList;
         }

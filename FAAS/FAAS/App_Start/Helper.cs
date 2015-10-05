@@ -16,6 +16,7 @@ namespace FAAS.App_Start
             return MockData.mockDellyOrder;
         }
 
+
         public static void UpdateDellyOrders(List<DellyOrder> updatedOrders)
         {
             foreach (var order in updatedOrders)
@@ -23,13 +24,25 @@ namespace FAAS.App_Start
                 var mockOrd = MockData.mockDellyOrder.Where(e => e.ProductId == order.ProductId).FirstOrDefault();
 
                 mockOrd.CompletedOrder = order.CompletedOrder;
-                mockOrd.PendingOrder = mockOrd.PendingOrder - order.CompletedOrder;
+                //mockOrd.PendingOrder = mockOrd.PendingOrder - order.CompletedOrder;
+            }
+        }
+        public static IList<PickingOrder> GetPickingOrders()
+        {
+            return MockData.mockPickingOrder;
+        }
+        public static void UpdatePickingOrder(List<PickingOrder> updatedOrders)
+        {
+
+            foreach (var order in updatedOrders)
+            {
+                var mockOrd = MockData.mockPickingOrder.Where(e => e.OrderId == order.OrderId).FirstOrDefault();
             }
         }
 
-        public static List<ProdcutItems> GetProducts(int tenantId)
+        public static List<ProductItem> GetProducts(int tenantId)
         {
-            List<ProdcutItems> items = new List<ProdcutItems>();
+            List<ProductItem> items = new List<ProductItem>();
 
             var tenantProducts = MockData.ProductTenant.Where(e => e.TenatId == tenantId);
 
@@ -38,7 +51,7 @@ namespace FAAS.App_Start
                 var prod = MockData.Products.Where(e => e.ProductId == product.ProductId).FirstOrDefault();
                 if (prod != null)
                 {
-                    items.Add(new ProdcutItems() { ProductId = prod.ProductId, Name = prod.Name, ImageUrl = prod.ImageUrl, Calories = prod.Calories, Price = product.Price });
+                    items.Add(new ProductItem() { ProductId = prod.ProductId, Name = prod.Name, ImageUrl = prod.ImageUrl, Calories = prod.Calories, Price = product.Price });
                 }
             }
 

@@ -198,12 +198,18 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AkController.cs" />
-    <Compile Include="Controllers\DellyController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\DeliAPIController.cs" />
+    <Compile Include="Controllers\DeliController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\PickingController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Entities\Checkout.cs" />
     <Compile Include="Entities\DellyOrders.cs" />
     <Compile Include="Entities\Order.cs" />
+    <Compile Include="Entities\PickingOrder.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\ProductTenat.cs" />
     <Compile Include="Entities\Tenat.cs" />
@@ -213,8 +219,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helper\ReadWriteCsv.cs" />
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\CheckoutModel.cs" />
     <Compile Include="Models\HeaderModel.cs" />
+    <Compile Include="Models\LoginDetails.cs" />
     <Compile Include="Models\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -230,7 +240,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\ProdcutItems.cs" />
+    <Compile Include="Models\ProductItem.cs" />
     <Compile Include="Models\Product.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -880,19 +890,85 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <Content Include="Images\barcode\1.png" />
+    <Content Include="Images\barcode\2.jpg" />
+    <Content Include="Images\barcode\3.jpg" />
+    <Content Include="Images\barcode\4.jpg" />
+    <Content Include="Images\barcode\5.jpg" />
+    <Content Include="Images\basket.png" />
+    <Content Include="Images\california-blts.jpg" />
+    <Content Include="Images\chicken-club-ranch-roll.jpg" />
+    <Content Include="Images\chicken-salad-sandwiches.jpg" />
+    <Content Include="Images\confirmorder.jpg" />
+    <Content Include="Images\courgette-panini.jpeg" />
     <Content Include="Images\create_thumb.png" />
+    <Content Include="Images\crispy-chicken-and-spring-onion-waffle-sandwich.jpeg" />
+    <Content Include="Images\cuban-steak-sandwiches.jpg" />
+    <Content Include="Images\falafel-sandwiches-with-sesame-mint-yoghurt-sauce.jpg" />
+    <Content Include="Images\garlicky-ham-and-swiss.jpg" />
+    <Content Include="Images\giant-muffuletta.jpg" />
+    <Content Include="Images\grilled-tomato-and-cheese.jpg" />
+    <Content Include="Images\Location\Accenture.jpg" />
+    <Content Include="Images\Location\businesspark.jpg" />
+    <Content Include="Images\Location\Cobalt.jpg" />
+    <Content Include="Images\Location\Cofely.jpg" />
+    <Content Include="Images\Location\NextHome.jpg" />
+    <Content Include="Images\meatball-subs.jpeg" />
+    <Content Include="Images\mini-meatball-sandwiches.jpeg" />
+    <Content Include="Images\omg-milky-way-toasties.jpg" />
     <Content Include="Images\Products\bread.jpg" />
+    <Content Include="Images\Products\california-blts.jpg" />
     <Content Include="Images\Products\carrot_cake.jpg" />
+    <Content Include="Images\Products\chicken-club-ranch-roll.jpg" />
+    <Content Include="Images\Products\chicken-salad-sandwiches.jpg" />
     <Content Include="Images\Products\chocolate_cake.jpg" />
+    <Content Include="Images\Products\courgette-panini.jpeg" />
+    <Content Include="Images\Products\crispy-chicken-and-spring-onion-waffle-sandwich.jpeg" />
+    <Content Include="Images\Products\cuban-steak-sandwiches.jpg" />
     <Content Include="Images\Products\cupcakes.jpg" />
+    <Content Include="Images\Products\falafel-sandwiches-with-sesame-mint-yoghurt-sauce.jpg" />
+    <Content Include="Images\Products\garlicky-ham-and-swiss.jpg" />
+    <Content Include="Images\Products\giant-muffuletta.jpg" />
+    <Content Include="Images\Products\Gluten Free.jpg" />
+    <Content Include="Images\Products\grilled-tomato-and-cheese.jpg" />
+    <Content Include="Images\Products\Just_Ham.jpg" />
     <Content Include="Images\Products\lemon_tart.jpg" />
+    <Content Include="Images\Products\meatball-subs.jpeg" />
+    <Content Include="Images\Products\mini-meatball-sandwiches.jpeg" />
+    <Content Include="Images\Products\omg-milky-way-toasties.jpg" />
     <Content Include="Images\Products\pear_tart.jpg" />
+    <Content Include="Images\Products\pulled-pork-sandwich.jpg" />
+    <Content Include="Images\Products\slow-cooker-pulled-turkey-sandwiches.jpg" />
+    <Content Include="Images\Products\sweet-and-sour-soy-pork-buns.jpg" />
     <Content Include="Images\Products\Thumbnails\bread.jpg" />
     <Content Include="Images\Products\Thumbnails\carrot_cake.jpg" />
     <Content Include="Images\Products\Thumbnails\chocolate_cake.jpg" />
     <Content Include="Images\Products\Thumbnails\cupcakes.jpg" />
     <Content Include="Images\Products\Thumbnails\lemon_tart.jpg" />
     <Content Include="Images\Products\Thumbnails\pear_tart.jpg" />
+    <Content Include="Images\Products\tuna-mini-melts-with-rosemary.jpg" />
+    <Content Include="Images\Products\turkey-pastrami-on-pumpernickel.jpg" />
+    <Content Include="Images\pulled-pork-sandwich.jpg" />
+    <Content Include="Images\Sandwich\Bread Kitchen Sink.jpg" />
+    <Content Include="Images\Sandwich\coke.png" />
+    <Content Include="Images\Sandwich\Eggplant Sandwich.jpg" />
+    <Content Include="Images\Sandwich\Elvis Presley.jpg" />
+    <Content Include="Images\Sandwich\fanta.png" />
+    <Content Include="Images\Sandwich\Gourmet.jpg" />
+    <Content Include="Images\Sandwich\Hot Tuna Sandwich.jpg" />
+    <Content Include="Images\Sandwich\Lazy Grilled Cheese Sandwich.jpg" />
+    <Content Include="Images\Sandwich\Meal of the day.jpg" />
+    <Content Include="Images\Sandwich\Peas and Potato Sandwich.jpg" />
+    <Content Include="Images\Sandwich\pepsi.png" />
+    <Content Include="Images\Sandwich\Sloppy Joes.jpg" />
+    <Content Include="Images\Sandwich\sprite.png" />
+    <Content Include="Images\Sandwich\Toasted Chicken Sandwich.jpg" />
+    <Content Include="Images\slow-cooker-pulled-turkey-sandwiches.jpg" />
+    <Content Include="Images\sweet-and-sour-soy-pork-buns.jpg" />
+    <Content Include="Images\tesco-van.jpg" />
+    <Content Include="Images\TescoLogo.png" />
+    <Content Include="Images\tuna-mini-melts-with-rosemary.jpg" />
+    <Content Include="Images\turkey-pastrami-on-pumpernickel.jpg" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -906,6 +982,8 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="Files\Orders.csv" />
+    <Content Include="Files\Products.csv" />
     <None Include="Properties\PublishProfiles\kitchen.pubxml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Images\faas.png" />
@@ -981,7 +1059,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Layout - Copy.cshtml" />
-    <Content Include="Views\Delly\Index.cshtml" />
+    <Content Include="Views\Deli\Index.cshtml" />
+    <Content Include="Views\Home\Register.cshtml" />
+    <Content Include="Views\Home\LogIn.cshtml" />
+    <Content Include="Views\Picking\Index.cshtml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

@@ -9,16 +9,19 @@
 {
     //@System.Diagnostics.Debugger.Launch();
     @Html.HiddenFor(model => Model.TenantImageUrl)
-
+    @Html.HiddenFor(model => Model.CustmorID)
 
     <div id="productsWrapper">
         <ul id="products" data-role="listview" data-inset="true">
             @*@foreach (var p in Model.productItems)*@
             @for (int i = 0; i < Model.productItems.Count; i++)
             {
+                @Html.HiddenFor(model => model.productItems[i].ProductId)
                 @Html.HiddenFor(model =>  Model.productItems[i].Price)
                 @Html.HiddenFor(model=> Model.productItems[i].Name)
-                
+                @Html.HiddenFor(model => Model.productItems[i].ImageUrl)
+                  @Html.HiddenFor(model => Model.productItems[i].Calories)
+
                 <li class="product">
                     <a href="~/@Model.productItems[i].ProductId" title="Order @Model.productItems[i].Name">
                         <img class="hide-from-desktop" src="~/Images/Products/Thumbnails/@Model.productItems[i].ImageUrl" alt="Image of @Model.productItems[i].Name" />
@@ -33,7 +36,7 @@
                     </a>
 
                     <!-- Desktop only -->
-                    <div class="action  hide-from-mobile">
+                    <div class="action  hide-from-mobile" style="">
                         <p class="price">
                             @*@Html.CheckBoxFor(model => Model.productItems[i].IsSelected)*@                            
                             £@string.Format("{0:f}", Model.productItems[i].Price)
@@ -43,6 +46,7 @@
                     </div>
 
                 </li>
+                
 
             }
         </ul>

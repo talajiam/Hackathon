@@ -15,7 +15,13 @@ namespace FAAS.Entities
 
         public int TotalOrder { get; set; }
 
-        public int PendingOrder { get; set; }
+        public int PendingOrder
+        {
+            get
+            {
+                return TotalOrder - CompletedOrder;
+            }
+        }
 
         public int CompletedOrder { get; set; }
     }

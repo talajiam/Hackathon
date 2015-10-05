@@ -11,16 +11,48 @@
 </head>
 <body>
     <div id="page">
-        <header>
-            <a href='@Url.Action("Index", "Home")'>
-                <img src='@Url.Content("~/Images/faas2.png")' />
+           <header style="resize:both;align-content:flex-start;border-bottom:hidden;border-color:azure">
+       
+                    <a href='@Url.Action("Index", "Home")'>
+                <img src='@Url.Content("~/Images/TescoLogo.png")' style="position:absolute;left:170px;top:0px;margin-bottom:20px;bottom:50px" width="170" height="100" />
+
             </a>
+            <a href='@Url.Action("Index", "Home")'>
+                <img src='@Url.Content("~/Images/basket.png")' style="position:absolute;right:20px;top:0px;margin-bottom:20px;bottom:50px" width="170" height="100" />
+
+            </a>
+            <nav style="position:absolute;right:60px;margin-bottom:20px;top:30px">
+                <ul>
+                    @*<li>@Html.Label("Item Count:10")</li>*@
+                </ul>
+            </nav>
+
             <p class="site-title"><a href="~/">Tesco FAAS</a></p>
+            @if (Session["CustomerName"] != null)
+            {
+                <table>
+                    <tr>
+                        <td>
+                            <h3>Hello, @Session["CustomerName"]</h3>
+                        </td>
+                        <td>
+                            <img src="@Session["Image"]" style="width:180px;height:110px; " />
+                        </td>
+                    </tr>
+                </table>
+            }
+            else
+            {
+                <h3><b>Hi, Please Login to Continue</b></h3>
+
+            }
             <nav>
                 <ul>
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("Products", "Products", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Logout", "Logout", "Home")</li>
+
                 </ul>
             </nav>
         </header>

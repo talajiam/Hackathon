@@ -2,47 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+    <title>Tesco Faas</title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width" />
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    @RenderSection("Scripts", required: false)
 </head>
 <body>
-    <header>
-        <div class="content-wrapper">
-            <div class="float-left">
-                <p class="site-title"> @Html.ActionLink("Tesco FaaS", "Index", "Home")</p>
-            </div>
-            <div class="float-right">
-                <section id="login">
-                    @Html.Partial("_LoginPartial")
-                </section>
-                <nav>
-                    <ul id="menu">
-                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li>@Html.ActionLink("Products", "Products", "Home")</li>
-                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <div id="body">
-        @RenderSection("featured", required: false)
-        <section class="content-wrapper main-content clear-fix">
-            @RenderBody()
-        </section>
-    </div>
-    <footer>
-        <div class="content-wrapper">
-            <div class="float-left">
-                <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
-            </div>
-        </div>
-    </footer>
+    <div id="page">
+        <header>
+            <a href='@Url.Action("Index", "Home")'>
+                <img src='@Url.Content("~/Images/TescoLogo.png")' style="position:absolute;left:170px;top:0px;margin-bottom:20px;bottom:50px" width="170" height="100" />
 
-    @Scripts.Render("~/bundles/jquery")
-    @RenderSection("scripts", required: false)
+            </a>
+            @*<a href='@Url.Action("Index", "Home")'>
+                <img src='@Url.Content("~/Images/basket.png")' style="position:absolute;right:20px;top:0px;margin-bottom:20px;bottom:50px" width="170" height="100" />
+
+            </a>*@
+            <nav style="position:absolute;right:60px;margin-bottom:20px;top:30px">
+                <ul>
+                    @*<li>@Html.Label("Item Count:10")</li>*@
+                </ul>
+            </nav>
+
+            <p class="site-title"><a href="~/">Tesco FAAS</a></p>
+            @*@if (Session["CustomerName"] != null)
+            {
+                <h3><b>Welcome: @Session["CustomerName"]</b></h3>
+            }
+            else
+            {
+                <h3><b>Hi, Please Login to Continue</b></h3>
+            }*@
+            <nav>
+                <ul>
+                    @*<li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Products", "Products", "Home")</li>*@
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+                </ul>
+            </nav>
+        </header>
+        <div id="body">
+            @RenderBody()
+        </div>
+        <footer>
+            &copy;@DateTime.Now.Year - Tesco Faas
+        </footer>
+    </div>
 </body>
 </html>

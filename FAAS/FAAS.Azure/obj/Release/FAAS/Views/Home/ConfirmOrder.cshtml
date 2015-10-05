@@ -1,4 +1,6 @@
-﻿@{
+﻿
+@model FAAS.Models.CheckoutModel
+@{
     ViewBag.Title = "Confirm Order";
 }
 
@@ -20,6 +22,12 @@
         </div>
     </section>
 @*}*@
+
 Thank you for shopping with Tesco
-<br />
-Your order number is: 13221-04011 
+<br/> <br />
+<b1>Your order number is:<b1> <span style="color:blue;font-size:200%">@Model.OrderId</span></b1></b1>
+<br /><br /><br />
+<img src="~/Images/confirmorder.jpg",  width="850" height="200" />
+
+<br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br />

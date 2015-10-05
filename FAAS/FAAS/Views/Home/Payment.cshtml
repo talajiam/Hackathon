@@ -1,8 +1,10 @@
-﻿@model FAAS.Entities.Checkout
+﻿@model FAAS.Models.CheckoutModel
 @{
     ViewBag.Title = "Payment";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    
 }
+
 @*@section featured {*@
     <section class="featured">
         <div class="content-wrapper">
@@ -23,7 +25,30 @@
 @using (Html.BeginForm("Payment", "Home"))
 {
     <div id="rightColumn">
-            
+
+        @{ for (int i = 0; i < Model.ProdcutItems.Count; i++)
+           {
+          @Html.HiddenFor(model => Model.ProdcutItems[i].ProductId)
+          @Html.HiddenFor(model => Model.ProdcutItems[i].Qty)
+          @Html.HiddenFor(model => Model.ProdcutItems[i].ImageUrl)
+            @Html.HiddenFor(model => Model.ProdcutItems[i].Name)
+            @Html.HiddenFor(model => Model.ProdcutItems[i].Price)
+
+           }
+}
+             @Html.HiddenFor(model => model.TotalItemQty)
+             @Html.HiddenFor(model => model.TotalPrice)
+
+            @Html.HiddenFor(model => model.CustmorID)
+            @Html.HiddenFor(model => model.DeliveryAddress)
+            @Html.HiddenFor(model => model.MobileNo)
+            @Html.HiddenFor(model => model.CustomerName)
+            @Html.HiddenFor(model => model.DeliveryLocationCode)
+
+            @Html.HiddenFor(model => model.DeliveryCharge)   
+            @Html.HiddenFor(model => model.DeliveryStartDate)
+            @Html.HiddenFor(model => model.DeliveryEndDate)
+    
             <div class="orderSummary scrollPosition">
                 <div class="header">
                     <h1 class="cf">Order Summary</h1>
@@ -37,11 +62,9 @@
                                 <dd class="address">
 
                                     <span class="hlt"></span>
-                                    Office 33,
-27 Colmore Row,
-Birmingham,
-England,
-B3 2EW
+                                 @Model.CustomerName 
+                                 @Model.DeliveryAddress
+                                 @Model.DeliveryLocationCode
                                 </dd>
                             </dl>
 
@@ -53,9 +76,9 @@ B3 2EW
                                 <dt class="dateTime">Delivery on:
                                 <span class="hide">Delivery time</span> </dt>
                                 <dd class="dateTime sprite">
-                                    <span class="hlt date">Monday
-21<sup>th</sup>&#160;September</span><br />
-                                    <span class="hlt time">12:00-14:00
+                                    <span class="hlt date">Tuesday
+29<sup>th</sup>&#160;September</span>
+                                    <span class="hlt time">12:00
                                     </span></dd>
                                 <p class="slotExpiryTime">
                                     Please checkout your order by <strong>10:00</strong> to ensure you don't lose the slot.
@@ -66,20 +89,20 @@ B3 2EW
                         <div class="totalItems">
                             <dl class="cf">
                                 <dt>Items in your trolley:</dt>
-                                <dd>2
-                                </dd>
+                                <dd><b>@Model.TotalItemQty</b>
+</dd>
                             </dl>
                         </div>
                         <div class="priceDetails">
                             <h3 class="hide">Payment Summary</h3>
-                            <dl class="cf">
+                            @*<dl class="cf">
                                 <dt>Service Charge:</dt>
-                                <dd>0.00</dd>
-                            </dl>
+                                <dd>@Model.DeliveryCharge</dd>
+                            </dl>*@
 
                             <dl class="cf">
-                                <dt class="total">Total:</dt>
-                                <dd class="total">£@Model.TotalPrice</dd>
+                                <dt class="total">Total Amount to Pay:</dt>
+                                <dd class="total"><b>£@Model.TotalPrice</b></dd>
                             </dl>
                         </div>
                         <div class="info">
@@ -114,10 +137,10 @@ B3 2EW
                                     </div>*@
                                     </div>
                                     <ul>
-                                        <li>
+                                        @*<li>
                                             <input id="PaymentOnline" style="width: 30px" name="SelectedPaymentOption" type="radio" value="PaymentOnline" />Pay online securely                                                                       </li>
                                         <li>
-                                            <input id="PaymentDoorCard" style="width: 30px" name="SelectedPaymentOption" type="radio" value="PaymentDoorCard" />Pay at the door by card</li>
+                                            <input id="PaymentDoorCard" style="width: 30px" name="SelectedPaymentOption" type="radio" value="PaymentDoorCard" />Pay at the door by card</li>*@
                                          <li>
                                             <input id="PaymentOnWallet" style="width: 30px" name="SelectedPaymentOption" type="radio" value="PaymentOnWallet" />Pay by Tesco Wallet</li>
                                     </ul>

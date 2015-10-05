@@ -5,30 +5,42 @@
     ViewBag.Title = "Products";
     //Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@*@Html.DisplayFor(model=>model.CustmorID)*@
 <h1>TESCO Food as a Service</h1>
 
 @using (Html.BeginForm("Index", "Home"))
 {
     //@System.Diagnostics.Debugger.Launch();
     @Html.HiddenFor(model => Model.TenantImageUrl)
+    @Html.HiddenFor(model => Model.CustmorID)
 
     for (int i = 0; i < 1; i++)
-        {
+    {
+
+        @Html.HiddenFor(model => model.productItems[i].ProductId)      
+        @Html.HiddenFor(model => model.productItems[i].ImageUrl)
+        @Html.HiddenFor(model => model.productItems[i].Name)
+        @Html.HiddenFor(model => model.productItems[i].Price)
 
 <div id="featuredProduct">
-    <img  alt="Featured Product" src="@Model.productItems[i].ImageUrl" />
+    <img style="width:670px;height:300px" alt="Featured Product" src="@Model.productItems[i].ImageUrl" />
     <div id="featuredProductInfo">
         <div id="productInfo">
             <h1>Food of the Day</h1>
-            <h2>@Model.productItems[i].Name</h2>    
+            <h3>@Model.productItems[i].Name</h3>    
            
-            <p class="price">$@string.Format("{0:f}", @Model.productItems[i].Price)</p>
+            <p class="price">£@string.Format("{0:f}", @Model.productItems[i].Price)</p>
             @*<p class="description">@featured.Description</p>*@
             <h4>Quantity @Html.TextBoxFor(m => Model.productItems[i].Qty, new { style = "width:50px" })</h4>
         </div>
         <div id="callToAction">
-            <a class="order-button" href="Products/@Model.productItems[i].ProductId" title="Order @Model.productItems[i].Name">Order Now</a>
+            @*<a class="order-button" href="Products/@Model.productItems[i].ProductId" title="Order @Model.productItems[i].Name">Order Now</a>*@
+          
+            <form action="Action2" method=post>               
+                <input type="submit" formaction="Home/Products" value="Continue Booking" />               
+            </form>&nbsp;&nbsp;&nbsp;<input type="submit" value="CheckOut" />
+
+          
         </div>
     </div>
 </div>

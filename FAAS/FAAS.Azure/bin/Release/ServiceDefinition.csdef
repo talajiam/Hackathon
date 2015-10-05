@@ -25,7 +25,7 @@
     </Endpoints>
     <Contents>
       <Content destination=".\">
-        <SourceDirectory path="C:\Users\cx75\Desktop\Arvind FaaS\FAAS\FAAS.Azure\rcf\Release\FAASContent\" />
+        <SourceDirectory path="C:\Users\cx75\Documents\GitHub\Hackathon\FAAS\FAAS.Azure\rcf\Release\FAASContent\" />
       </Content>
     </Contents>
   </WebRole>

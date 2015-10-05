@@ -1,0 +1,2 @@
+Id,CustomerId,CustomerName,TotalPrice,TotalItemCount,DeliveryCharge,MobileNo,Status,DeliveryAddress,DeliveryLocationCode,DeliveryStartDate,DeliveryEndDate,webcutofftime
+101,123,Venkat,10.9,23,0,9035008866,10,#31/282 WhitefiledBangalore,560066,2015-09-30 12:00,2015-09-30 13:00,2015-09-30 10:00
